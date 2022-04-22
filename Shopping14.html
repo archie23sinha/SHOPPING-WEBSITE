@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> Shopping 14</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+<script>
+$(document).ready(function () {
+var oil= ['Coconut', 'Almond', 'JOJOBA'];
+var shampoo = ['MAMA EARTH', 'TRESEMME', 'SUNSILK', 'MCAFFEINE'];
+$('#searchoil').typeahead({ source: oil });
+$('#shampoo').typeahead({ source: shampoo });
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+<h1><i><b class="text-danger">SHOPSY -</b><i class="text-success"> India's Favourite Shopping Website</i></h1>
+
+
+<div class="tabbable">
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab1" data-toggle="tab"> OIL</a></li>
+<br>
+<li><a href="#tab2" data-toggle="tab"> SHAMPOO</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="tab1">
+<form role="form">
+<div class="form-group">
+<input type="text" class="form-control" id="searchoil" placeholder="Find your oil"
+data-provide="typeahead">
+</div>
+</form>
+</div>
+<div class="tab-pane" id="tab2">
+<form role="form">
+<div class="form-group">
+<input type="text" class="form-control" id="shampoo" placeholder="Find your Shampoo"
+data-provide="typeahead">
+</div>
+</form>
+</div>
+</div>
+</div>
+<img src="https://cdn.shopify.com/s/files/1/1454/5188/files/Desktop-Banner_a50b0483-7c5c-4ece-a3a3-1c43fc5ac68f.webp?v=1649230381">
+
+</div>
+
+</body>
+
+</html>
+
